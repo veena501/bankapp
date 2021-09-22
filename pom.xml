@@ -12,33 +12,34 @@
 	</dependency>
 	<dependency>
 	    <groupId>org.mockito</groupId>
-	    <artifactId>mockito-core</artifactId>
-	    <version>2.22.0</version>
+	    <artifactId>mockito-all</artifactId>
+	    <version>1.10.19</version>
 	</dependency>
   	
 	
   </dependencies>
-  
-  
-  
-  
-  
   <build>
-  	<plugins>
-  		<plugin>
-  		<groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.5.1</version>
-        <configuration>
-          <!-- or whatever version you use -->
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-  		</plugin>
-  		
-  	
-  	</plugins>
-  	
-  </build>
-  
+<plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>3.8.0</version>
+<configuration>
+<release>11</release>
+</configuration>
+</plugin>
+<plugin>
+<groupId>org.sonarsource.scanner.maven</groupId>
+<artifactId>sonar-maven-plugin</artifactId>
+<version>3.3.0.603</version>
+</plugin>
+
+</plugins>
+</build>
 </project>
+  
+  
+  
+  
+  
+  
